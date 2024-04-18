@@ -1,0 +1,29 @@
+.navigation-bar {
+    background-color: #ddacac;
+    overflow: hidden;
+}
+
+.navigation-bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation-bar a:not(:first-child) {
+        display: none;
+    }
+    .navigation-bar a.icon {
+        float: right;
+        display: block;
+    }
+}
