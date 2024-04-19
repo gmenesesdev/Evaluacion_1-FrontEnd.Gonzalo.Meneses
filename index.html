@@ -16,9 +16,9 @@
             <nav class="navigation-bar" id="myTopnav">
                 <a href="index.html">ConIngenio</a>
                 <a href="index.html" class="active">Home</a>
-                <a href="servicios.html">Nuestros Servicios</a>
-                <a href="contacto.html">Contáctenos</a>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="#about-us">Nosotros</a>
+                <a href="#services">Nuestros Servicios</a>
+                <a href="#contact">Contáctenos</a>
                 <a
                     href="javascript:void(0);"
                     class="icon"
@@ -33,7 +33,31 @@
                     <p>Somos especialistas en lo que hacemos</p>
                 </div>
             </div>
-            <div class="relevantes">
+            <div class="about-us">
+                <h1>Sobre Nosotros</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, magnam nihil? Voluptatum delectus quibusdam
+                    consequuntur consectetur aspernatur aperiam, nobis odit
+                    omnis molestias ex. Commodi nam veniam, laudantium odio
+                    voluptate saepe?
+                </p>
+                <h2>Mision</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    quo est sit incidunt consectetur nulla voluptatum debitis
+                    numquam aliquid doloribus eos deleniti vitae accusantium
+                    exercitationem cum sint veritatis, dignissimos a.
+                </p>
+                <h2>Vision</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Libero nesciunt odit, repellat vel voluptatem iusto,
+                    voluptates nisi aliquam, atque cumque dicta eligendi ex
+                    eaque? Ad fuga dolorum numquam assumenda non.
+                </p>
+            </div>
+            <div class="services" id="services">
                 <h1>Servicios</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
@@ -41,45 +65,106 @@
                     est unde iusto deleniti, sequi provident vero magnam
                     voluptates assumenda? Maiores consequuntur eligendi dolore.
                 </p>
-                <section>
-                    <h2>Consultoria Digital</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Illo maiores perspiciatis amet iure itaque, animi
-                        nobis sit ex earum dolor explicabo odit velit aperiam
-                        hic quidem vitae ipsa recusandae molestias.
-                    </p>
-                    <h2>Soluciones Multiexperiencia</h2>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Quasi cum dolor voluptas ea dolorum. Ad voluptas
-                        dolores quo voluptatum quos natus odio odit aut.
-                        Dignissimos vero error architecto quibusdam recusandae.
-                    </p>
-                    <h2>Evolución de Ecosistemas</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Aliquid, quae consequuntur sapiente quas eligendi
-                        hic, animi, magnam iure iste enim aspernatur id? Sint
-                        odio excepturi animi! Libero animi ab voluptate!
-                    </p>
-                    <h2>Soluciones Low-Code</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Delectus, quam nemo? Magnam laudantium quos minima
-                        praesentium ab excepturi culpa fugit, eveniet, velit
-                        commodi esse libero quaerat quibusdam sunt iste dolorem.
-                    </p>
-                </section>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Service 1</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                        <button>Ver más</button>
+                    </div>
+                    <div class="card">
+                        <h3>Service 2</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                        <button>Ver más</button>
+                    </div>
+                    <div class="card">
+                        <h3>Service 3</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                        <button>Ver más</button>
+                    </div>
+                    <div class="card">
+                        <h3>Service 4</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                        <button>Ver más</button>
+                    </div>
+                </div>
             </div>
-            <div class="info-contacto">
+            <div class="contact" id="contact">
                 <h1>Contacto</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero quos numquam iure neque, optio blanditiis tempora
-                    recusandae a praesentium! Natus laudantium earum eligendi
-                    eaque! Dolorem unde nesciunt voluptatem impedit harum.
-                </p>
+                <div class="formulario">
+                    <form action="">
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            name="nombre"
+                            id="nombre"
+                            placeholder="Nombre"
+                        />
+                        <label for="apellido">Apellido</label>
+                        <input
+                            type="text"
+                            name="apellido"
+                            id="apellido"
+                            placeholder="Apellido"
+                        />
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="ejemplo@ejemplo.com"
+                        />
+                        <label for="fono">Telefono</label>
+                        <input
+                            type="tel"
+                            name="fono"
+                            id="fono"
+                            placeholder="987654321"
+                        />
+                        <label for="fservicio"
+                            >Seleccione el servicio a Consultar</label
+                        >
+                        <select name="fservicio" id="fservicio">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                        <label for="asunto">Asunto</label>
+                        <textarea
+                            name="asunto"
+                            id="asunto"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                        <input type="submit" value="Enviar Datos" />
+                    </form>
+                </div>
+                <div class="form-card-container">
+                    <div class="card-form">
+                        <h3>Direccion</h3>
+                        <p>Algo</p>
+                    </div>
+                    <div class="card-form">
+                        <h3>Direccion</h3>
+                        <p>Algo</p>
+                    </div>
+                    <div class="card-form">
+                        <h3>Direccion</h3>
+                        <p>Algo</p>
+                    </div>
+                </div>
             </div>
             <footer>
                 <p>Datos footer</p>
